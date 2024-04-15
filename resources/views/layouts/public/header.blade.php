@@ -1,9 +1,9 @@
-<header class="bg-white">
-    <nav class="flex justify-between items-center w-[92%] mx-auto">
+<header class="bg-white mb-5">
+    <nav class="flex justify-between items-center md:container mx-auto">
         <div>
-            <img class="w-16 curoser-pointer" src="https://placehold.co/160x120?text=Hello+World" alt="">
+            <img class="w-16 cursor-pointer" src="https://placehold.co/160x120?text=Hello+World" alt="">
         </div>
-        <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-6">
+        <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-6">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
                     <a class="hover:text-gray-500" href="#">Hem</a>
