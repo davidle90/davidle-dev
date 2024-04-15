@@ -4,6 +4,6 @@ class PublicController extends Controller
 {
     public function index()
     {
-        return view('pages.public.index');
+        return view('pages.public.admintest');
     }
 }

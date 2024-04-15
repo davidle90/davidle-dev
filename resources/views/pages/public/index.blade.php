@@ -6,9 +6,6 @@
 @section('modals')
 @endsection
 
-@section('breadcrumbs')
-@endsection
-
 @section('content')
     <div class="container mx-auto">
         <div class="w-4/5 mx-auto">
