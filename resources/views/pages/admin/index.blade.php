@@ -10,7 +10,9 @@
 @endsection
 
 @section('content')
-    Admin
+    <div>
+        admin dashboard
+    </div>
 @endsection
 
 @section('scripts')
