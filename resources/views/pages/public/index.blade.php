@@ -10,10 +10,10 @@
     <div class="container mx-auto">
         <div class="w-4/5 mx-auto">
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
-                We invest in the world’s potential
+                Template for future projects
             </h1>
             <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+                This is a template for future projects - using Tailwind CSS, Fontawesome / Bootstrap Icons and DropzoneJS. Includes public and admin pages.
             </p>
             <div class="text-center">
                 <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
