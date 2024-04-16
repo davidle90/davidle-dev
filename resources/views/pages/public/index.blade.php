@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="container mx-auto">
-        <div class="w-4/5 mx-auto">
+        <div class="w-4/5 mx-auto my-12 py-12">
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
                 Template for future projects
             </h1>
