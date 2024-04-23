@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="#"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -24,7 +25,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+{{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -32,7 +33,7 @@
     @yield('styles')
     @stack('styles')
 </head>
-<body class="font-[Poppins] min-h-screen flex flex-col justify-between">
+<body class="font-[Poppins] h-screen flex flex-col justify-between">
 
 @yield('modals')
 
@@ -40,7 +41,7 @@
 @include('layouts.public.header')
 
 <!-- Main -->
-<main class="flex-grow">
+<main class="grow">
     @yield('content')
 </main>
 
