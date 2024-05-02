@@ -9,7 +9,8 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "davidle90/products": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -48,6 +49,15 @@
             "@php artisan key:generate --ansi"
         ]
     },
+    "repositories": [
+        {
+            "type":"path",
+            "url":"../packages/davidle90/products",
+            "options":{
+                "symlink":true
+            }
+        }
+    ],
     "extra": {
         "laravel": {
             "dont-discover": []
