@@ -10,7 +10,8 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "davidle90/products": "dev-main"
+        "davidle90/products": "dev-master",
+        "davidle90/settings": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -53,6 +54,13 @@
         {
             "type":"path",
             "url":"../packages/davidle90/products",
+            "options":{
+                "symlink":true
+            }
+        },
+        {
+            "type":"path",
+            "url":"../packages/davidle90/settings",
             "options":{
                 "symlink":true
             }

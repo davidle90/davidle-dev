@@ -23,8 +23,11 @@
     <!-- Dropzone CSS -->
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 
+    <!-- Flowbite JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
     <!-- Scripts -->
-{{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+{{--    @ vite(['resources/css/app.css', 'resources/js/app.js'])--}}
 
     <!-- jQuery script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -54,6 +57,8 @@
         </div>
     </div>
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 @yield('scripts')
 @stack('scripts')
