@@ -40,7 +40,6 @@
 </head>
 
 <body class="font-[Poppins] min-h-screen flex flex-col justify-between">
-@yield('modals')
 
 @yield('modals')
 

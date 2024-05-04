@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f272fe03ddfecf8126cdec067eaca6e",
+    "content-hash": "a4854df73bae93281300d0c55ae6d43a",
     "packages": [
         {
             "name": "brick/math",
@@ -166,12 +166,47 @@
             }
         },
         {
+            "name": "davidle90/restaurant-menu",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../packages/davidle90/restaurant-menu",
+                "reference": "66ceb39470968b19e225ee01d38610c6957592c8"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davidle90\\RestaurantMenu\\RestaurantMenuServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Davidle90\\RestaurantMenu\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "david le"
+                }
+            ],
+            "description": "restaurant menu package",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "davidle90/settings",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../packages/davidle90/settings",
-                "reference": "2e625f770003ca6b5860e8696368d13df2990bd3"
+                "reference": "b65c648dcfb014751f6dbf47c865320459bc4674"
             },
             "type": "package",
             "extra": {
@@ -8303,7 +8338,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "davidle90/products": 20,
-        "davidle90/settings": 20
+        "davidle90/settings": 20,
+        "davidle90/restaurant-menu": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

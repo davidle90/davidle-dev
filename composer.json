@@ -11,7 +11,8 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "davidle90/products": "dev-master",
-        "davidle90/settings": "dev-master"
+        "davidle90/settings": "dev-master",
+        "davidle90/restaurant-menu": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -61,6 +62,13 @@
         {
             "type":"path",
             "url":"../packages/davidle90/settings",
+            "options":{
+                "symlink":true
+            }
+        },
+        {
+            "type":"path",
+            "url":"../packages/davidle90/restaurant-menu",
             "options":{
                 "symlink":true
             }

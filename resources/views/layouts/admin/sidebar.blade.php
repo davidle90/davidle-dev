@@ -8,12 +8,12 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                <a href="{{ route('admin.menu.index') }}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                     <span class="whitespace-nowrap"><i class="fas fa-utensils mr-2"></i>Menu</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                <a href="{{ route('admin.settings.index')}}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                     <span class="whitespace-nowrap"><i class="fa-solid fa-gear mr-2"></i>Settings</span>
                 </a>
             </li>
