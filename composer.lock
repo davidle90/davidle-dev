@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4854df73bae93281300d0c55ae6d43a",
+    "content-hash": "2e6ddd9dde3b90bd3596a20b324926cf",
     "packages": [
         {
             "name": "brick/math",
@@ -166,24 +166,24 @@
             }
         },
         {
-            "name": "davidle90/restaurant-menu",
+            "name": "davidle90/restaurant",
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../packages/davidle90/restaurant-menu",
-                "reference": "66ceb39470968b19e225ee01d38610c6957592c8"
+                "url": "../packages/davidle90/restaurant",
+                "reference": "8d67f6df7c30e449217b9f1c68a611fcd5f52a22"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Davidle90\\RestaurantMenu\\RestaurantMenuServiceProvider"
+                        "Davidle90\\Restaurant\\RestaurantServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Davidle90\\RestaurantMenu\\": "src/"
+                    "Davidle90\\Restaurant\\": "src/"
                 }
             },
             "license": [
@@ -206,7 +206,7 @@
             "dist": {
                 "type": "path",
                 "url": "../packages/davidle90/settings",
-                "reference": "b65c648dcfb014751f6dbf47c865320459bc4674"
+                "reference": "6f73ac134a3cc960926354df5234a091db464b2c"
             },
             "type": "package",
             "extra": {
@@ -8339,7 +8339,7 @@
     "stability-flags": {
         "davidle90/products": 20,
         "davidle90/settings": 20,
-        "davidle90/restaurant-menu": 20
+        "davidle90/restaurant": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

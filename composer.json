@@ -12,7 +12,7 @@
         "laravel/tinker": "^2.7",
         "davidle90/products": "dev-master",
         "davidle90/settings": "dev-master",
-        "davidle90/restaurant-menu": "dev-master"
+        "davidle90/restaurant": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -68,7 +68,7 @@
         },
         {
             "type":"path",
-            "url":"../packages/davidle90/restaurant-menu",
+            "url":"../packages/davidle90/restaurant",
             "options":{
                 "symlink":true
             }
