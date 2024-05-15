@@ -29,13 +29,27 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     </head>
-    <body class="font-[Poppins] h-screen flex flex-col justify-between">
+    <body class="h-screen flex flex-col justify-between">
 
-        <div class="flex items-center justify-center mx-auto">
-            {{ $slot }}
-        </div>
+        @yield('modals')
+
+        <!-- Header -->
+        @include('layouts.public.header')
+
+        <!-- Main -->
+        <main class="flex items-center justify-center m-auto grow">
+            <div class="border p-8 bg-gray-100 rounded">
+                {{ $slot }}
+            </div>
+        </main>
+
+        <!-- Footer -->
+        @include('layouts.public.footer')
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+        @yield('scripts')
+        @stack('scripts')
 
     </body>
 </html>
