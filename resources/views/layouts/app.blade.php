@@ -40,7 +40,7 @@
         @stack('styles')
     </head>
 
-    <body class="h-screen flex flex-col justify-between">
+    <body class="h-screen flex flex-col justify-between bg-gray-900">
 
         @yield('modals')
 
