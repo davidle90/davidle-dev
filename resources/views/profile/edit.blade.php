@@ -1,4 +1,4 @@
-@extends('layouts.admin.main')
+@extends('layouts.app')
 
 @section('breadcrumbs')
     <li aria-current="page">
@@ -6,7 +6,7 @@
             <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
-            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2">Profile</span>
+            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2">Profil</span>
         </div>
     </li>
 @endsection
