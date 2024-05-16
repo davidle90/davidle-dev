@@ -8,23 +8,12 @@
 <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <a href="{{ route('admin.index') }}" class="flex items-center ps-2.5 mb-5">
-            <img src="#" class="h-6 me-3 sm:h-7" alt="logo" />
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{{ config('app.name', 'Laravel') }}</span>
         </a>
         <ul class="space-y-2 font-medium">
             <li>
                 <a href="{{ route('admin.index')}}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                     <span class="whitespace-nowrap"><i class="fas fa-th-large mr-2"></i>Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('admin.menu.index') }}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
-                    <span class="whitespace-nowrap"><i class="fas fa-utensils mr-2"></i>Meny</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('admin.menu.category.index') }}" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
-                    <span class="whitespace-nowrap"><i class="fa-solid fa-list mr-2"></i>Kategorier</span>
                 </a>
             </li>
             <li>

@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="icon" href="{{ asset('images/dl-favicon.webp') }}"/>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -20,35 +21,39 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://kit.fontawesome.com/0c64e32fd9.js" crossorigin="anonymous"></script>
 
+        <!-- Dropzone CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
         <!-- Flowbite JS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
         <!-- Scripts -->
-{{--        @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+        {{-- @ vite(['resources/css/app.css', 'resources/js/app.js'])--}}
 
+        <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+        <!-- Dropzone JS -->
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+
+        @yield('styles')
+        @stack('styles')
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    <body class="h-screen flex flex-col justify-between">
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+        @yield('modals')
+
+        @if (Request::is('admin*') || Request::is('profile*'))
+            @include('layouts.admin.main')
+        @else
+            @include('layouts.public.main')
+        @endif
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+        @yield('scripts')
+        @stack('scripts')
 
     </body>
 </html>
