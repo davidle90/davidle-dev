@@ -1,8 +1,5 @@
-<nav class="bg-white border-b shadow">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="haf-font self-center text-4xl font-normal">{{ config('app.name', 'Laravel') }}</span>
-        </a>
+<nav class="bg-gray-900 text-gray-400">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-orange-100 rounded-lg md:hidden hover:bg-orange-100" aria-controls="navbar-default" aria-expanded="false">
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -21,7 +18,7 @@
                         <a href="#" class="block py-2 px-3">Projects</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md">Contact</a>
+                        <a href="#" class="block py-2 px-3">Contact</a>
                     </li>
                 </ul>
             </div>
