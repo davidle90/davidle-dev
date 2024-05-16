@@ -20,7 +20,7 @@
 @section('content')
     <div class="m-5">
         <h1 class="mb-5 font-bold">Inställningar</h2>
-        <form id="onSaveForm" action="{{ route('admin.settings.store') }}" method="POST">
+        <form id="onSaveForm" action="#" method="POST">
             @csrf
         </form>
 
