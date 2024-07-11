@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'index'])->name('index');
-Route::get('/download-resume', [PublicController::class, 'download_resume'])->name('download_resume');
 
 Route::get('/admin/dashboard', function () {
     return view('dashboard');
