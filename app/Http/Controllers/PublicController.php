@@ -8,15 +8,4 @@ class PublicController extends Controller
     {
         return view('pages.public.index');
     }
-
-    public function download_resume()
-    {
-        $resumePath = 'resumes/CV David Le.pdf';
-
-        if (Storage::disk('public')->exists($resumePath)) {
-            return Storage::disk('public')->download($resumePath);
-        } else {
-            abort(404);
-        }
-    }
 }
