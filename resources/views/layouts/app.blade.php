@@ -6,7 +6,6 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-        <link rel="icon" href="{{ asset('images/dl-favicon.webp') }}"/>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -24,6 +23,9 @@
         <!-- Dropzone CSS -->
         <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- Flowbite JS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
@@ -36,11 +38,66 @@
         <!-- Dropzone JS -->
         <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
 
+        <style>
+            .font-poppins {
+                font-family: 'Poppins', sans-serif;
+            }
+            .brand-text {
+                color: #f4fdfb;
+            }
+            .brand-text-secondary {
+                color: #65acb3;
+            }
+            .brand-text-primary {
+                color: #f4fdfb;
+            }
+            .brand-text-accent {
+                color: #df5554;
+            }
+            .brand-text-bg {
+                color: #202d32;
+            }
+            .brand-bg {
+                background-color: #202d32;
+            }
+            .brand-bg-secondary {
+                background-color: #65acb3;
+            }
+            .brand-primary {
+                background-color: #f4fdfb;
+            }
+            .brand-secondary {
+                background-color: #65acb3;
+            }
+            .brand-accent {
+                background-color: #df5554;
+            }
+            .brand-border-secondary {
+                border-color: #65acb3;
+            }
+            .brand-border-accent {
+                border-color: #df5554;
+            }
+             /* Back to top button */
+            #backToTopBtn {
+                display: none; /* Hidden by default */
+                position: fixed; /* Fixed position */
+                bottom: 20px; /* Place the button at the bottom of the page */
+                right: 30px; /* Place the button 30px from the right */
+                z-index: 99; /* Make sure it does not overlap */
+                border: none; /* Remove borders */
+                outline: none; /* Remove outline */
+                cursor: pointer; /* Add a mouse pointer on hover */
+                padding: 15px 19px; /* Some padding */
+                font-size: 18px; /* Increase font size */
+            }
+        </style>
+
         @yield('styles')
         @stack('styles')
     </head>
 
-    <body class="h-screen flex flex-col justify-between bg-gray-900">
+    <body class="h-screen flex flex-col justify-between brand-bg brand-text font-poppins">
 
         @yield('modals')
 
@@ -55,5 +112,24 @@
         @yield('scripts')
         @stack('scripts')
 
+        <script>
+            $(document).ready(function() {
+                // Show or hide the button based on scroll position
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 300) {
+                        $('#backToTopBtn').fadeIn();
+                    } else {
+                        $('#backToTopBtn').fadeOut();
+                    }
+                });
+
+                // Scroll to the top when the button is clicked
+                $('#backToTopBtn').click(function(event) {
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop: 0}, 500);
+                    return false;
+                });
+            });
+        </script>
     </body>
 </html>
