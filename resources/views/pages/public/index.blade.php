@@ -74,7 +74,7 @@
                     Enthusiastic about problem-solving and constantly eager to learn new technologies in web development, I am keen to explore new opportunities to enhance my skills and contribute to impactful projects.
                 </p>
                 <div class="mt-5">
-                    <a href="{{ route('download_resume') }}" class="hover:scale-110 transform brand-text-bg brand-accent shadow-md font-medium text-xl px-5 py-2.5 me-2 my-4 hover:bg-red-400"
+                    <a href="{{ route('download_resume') }}" target="_blank" class="hover:scale-110 transform brand-text-bg brand-accent shadow-md font-medium text-xl px-5 py-2.5 me-2 my-4 hover:bg-red-400"
                     >
                         Get my resume
                     </a>
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <div class="flex justify-center items-center mt-5">
-                <a href="{{ route('download_resume') }}" class="hover:scale-110 transform brand-text-bg brand-accent shadow-md font-medium text-xl px-5 py-2.5 me-2 my-4 hover:bg-red-400"
+                <a href="{{ route('download_resume') }}" target="_blank" class="hover:scale-110 transform brand-text-bg brand-accent shadow-md font-medium text-xl px-5 py-2.5 me-2 my-4 hover:bg-red-400"
                 >
                     Get my resume
                 </a>
