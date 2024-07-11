@@ -13,8 +13,8 @@ class PublicController extends Controller
     {
         $resumePath = 'CV David Le.pdf';
 
-        if (Storage::disk('files')->exists($resumePath)) {
-            return Storage::disk('files')->download($resumePath);
+        if (Storage::disk('resumes')->exists($resumePath)) {
+            return Storage::disk('resumes')->download($resumePath);
         } else {
             abort(404);
         }
