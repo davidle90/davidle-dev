@@ -11,10 +11,10 @@ class PublicController extends Controller
 
     public function download_resume()
     {
-        $resumePath = 'CV David Le.pdf';
+        $resumePath = 'resumes/CV David Le.pdf';
 
-        if (Storage::disk('resumes')->exists($resumePath)) {
-            return Storage::disk('resumes')->download($resumePath);
+        if (Storage::disk('public')->exists($resumePath)) {
+            return Storage::disk('public')->download($resumePath);
         } else {
             abort(404);
         }
