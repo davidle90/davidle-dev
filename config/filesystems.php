@@ -30,11 +30,6 @@ return [
 
     'disks' => [
 
-        'resumes' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public/resumes'),
-        ],
-
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
