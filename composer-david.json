@@ -51,8 +51,11 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://davidle90.repo.repman.io"
+            "type":"path",
+            "url":"../packages/davidle90/payshare",
+            "options":{
+                "symlink":true
+            }
         }
     ],
     "extra": {

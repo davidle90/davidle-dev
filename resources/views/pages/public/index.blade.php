@@ -131,7 +131,7 @@
             <div class="flex flex-col justify-center sm:justify-between items-center space-y-4 gap-4 px-4 sm:px-0">
                 <div class="w-3/4 flex gap-8">
                     <div class="hidden sm:block">
-                        <img class="rounded cursor-pointer project-img" src="{{ asset('images/haf-page.PNG') }}" alt="happyasianfood">
+                        <img class="rounded project-img" src="{{ asset('images/haf-page.PNG') }}" alt="happyasianfood">
                     </div>
                     <div class="sm:w-3/4 mx-auto sm:mx-0">
                         <h2 class="text-xl font-semibold">Happy Asian Food</h2>
@@ -154,7 +154,7 @@
 
                 <div class="sm:w-3/4 flex gap-8">
                     <div class="hidden sm:block">
-                        <img class="rounded cursor-pointer project-img" src="{{ asset('images/logoipsum-page.PNG') }}" alt="logoipsum">
+                        <img class="rounded project-img" src="{{ asset('images/logoipsum-page.PNG') }}" alt="logoipsum">
                     </div>
                     <div class="w-3/4 mx-auto sm:mx-0">
                         <h2 class="text-xl font-semibold">Logoipsum (WIP)</h2>
@@ -174,6 +174,28 @@
                         </button>
                     </div>
                 </div>
+
+                {{-- <div class="sm:w-3/4 flex gap-8">
+                    <div class="hidden sm:block">
+                        <img class="rounded project-img border" src="{{ asset('images/payshare.PNG') }}" alt="payshare">
+                    </div>
+                    <div class="w-3/4 mx-auto sm:mx-0">
+                        <h2 class="text-xl font-semibold">PayShare</h2>
+                        <p class="brand-text-secondary">
+                            Made with: PHP, Laravel, Javascript, TailwindCSS
+                        </p>
+                        <p>
+                            Payshare description
+                        </p>
+                        <button
+                            type="button"
+                            class="border hover:scale-105 transform shadow-md text-md px-5 py-2.5 me-2 my-4 font-normal go-to-url brand-border-accent brand-text-accent"
+                            data-url="{{ route('payshare.index') }}"
+                        >
+                            Demo
+                        </button>
+                    </div>
+                </div> --}}
             </div>
         </div>
 
