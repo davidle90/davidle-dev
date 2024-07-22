@@ -103,6 +103,8 @@
 
         @if (Request::is('admin*') || Request::is('profile*'))
             @include('layouts.admin.main')
+        @elseif (Request::is('projects*'))
+            @include('layouts.public.project')
         @else
             @include('layouts.public.main')
         @endif
