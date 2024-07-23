@@ -175,17 +175,19 @@
                     </div>
                 </div>
 
-                {{-- <div class="sm:w-3/4 flex gap-8">
+                <div class="sm:w-3/4 flex gap-8">
                     <div class="hidden sm:block">
                         <img class="rounded project-img border" src="{{ asset('images/payshare.PNG') }}" alt="payshare">
                     </div>
                     <div class="w-3/4 mx-auto sm:mx-0">
                         <h2 class="text-xl font-semibold">PayShare</h2>
                         <p class="brand-text-secondary">
-                            Made with: PHP, Laravel, Javascript, TailwindCSS
+                            Made with: PHP, Laravel, Javascript, TailwindCSS, ExchangeRate-API
                         </p>
                         <p>
-                            Payshare description
+                            Payshare is a web application designed to facilitate the management of shared expenses within a group.
+                            It allows users to create groups, add members, and efficiently track and manage shared bills.
+                            Additionally, the application features a currency converter, making it an ideal solution for travelers.
                         </p>
                         <button
                             type="button"
@@ -195,7 +197,7 @@
                             Demo
                         </button>
                     </div>
-                </div> --}}
+                </div>
             </div>
         </div>
 
